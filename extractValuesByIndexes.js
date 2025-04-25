@@ -1,5 +1,5 @@
 function extractValuesByIndexes(arr, indexes) {
-  return indexes.map(index => arr[index]);
+    return indexes.map(index => arr[index]);
 }
 
 
