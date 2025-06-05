@@ -1,10 +1,11 @@
-function extractValuesByIndexes(arr, indexes) {
-  return indexes.map(index => arr[index]);
+let numbers = [10, 20, 10, 40, 50, 60, 70];
+let target = 50;
+
+for (let i = 0; i < numbers.length; i++) {
+  for (let j = i + 1; j < numbers.length; j++) {
+    if (numbers[i] + numbers[j] === target) {
+      console.log(i + ", " + j);
+      break; 
+    }
+  }
 }
-
-
-const array = ['a', 'b', 'c', 'd', 'e'];
-const indexes = [0, 2, 4];
-
-const result = extractValuesByIndexes(array, indexes);
-console.log(result);
